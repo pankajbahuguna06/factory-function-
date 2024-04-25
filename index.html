@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+
+</body>
+
+</html>
+<script>
+
+    //  factory function iPhone1 ==>>>>>>>
+
+    function iPhone1(ASIN, color, display, camera) {
+        let obj = {}
+
+        obj.ASIN = ASIN;
+        obj.color = color;
+        obj.display = display;
+        obj.camera = camera
+
+        obj.dial = function () {
+            console.log("tring.. tring...")
+        }
+        obj.sendMessage = function () {
+            console.log("Sending message...")
+        }
+        obj.cameraClick = function () {
+            console.log("Camera clicked")
+        }
+
+
+        return obj
+
+
+    }
+
+    let iPhone_1 = iPhone1(1, "black", 6.6, "18mp")
+    console.log(iPhone_1)
+    iPhone_1.dial()
+    iPhone_1.sendMessage()
+    iPhone_1.cameraClick()
+
+
+    // factory function iPhone2 ====>>>>>>>>
+
+    function iPhone2(ASIN, color, display, camera, bluetooth) {
+        let obj = {}
+
+        obj.ASIN = ASIN;
+        obj.color = color;
+        obj.display = display;
+        obj.camera = camera;
+        obj.bluetooth = bluetooth;
+
+        obj.dial = function () {
+            console.log("tring.. tring...")
+        }
+        obj.sendMessage = function () {
+            console.log("Sending message...")
+        }
+        obj.cameraClick = function () {
+            console.log("Camera clicked")
+        }
+        obj.connectBluetooth = function () {
+            console.log("Bluetooth connected successfully...")
+        }
+
+        return obj
+    }
+    let result = iPhone2(1, "black", 6.6, "50mp", 5.0)
+    console.log(result)
+    result.dial()
+    result.sendMessage()
+    result.cameraClick()
+    result.connectBluetooth()
+</script>
